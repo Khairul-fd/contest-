@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!----================games part start===================------>
+    <!----================banner part start===================------>
+<div class="banner">
+    <div class="welcome_animation">
+        <span class="text">Welcome To The Games</span>
+    </div>
+    <div class="start_button">
+        <button class="to_do_list_play">To Do List</button>
+        <button class="game_start_button">Games</button>
+    </div>
+</div>
+    <!----------------banner part end------------>
+    <!----================play button part start===================------>
+    <div class="play_button">
+        <div class="heding">
+            <h1>Player -1</h1>
+            <h1>Player -2</h1>
+            <h1>Player -3</h1>
+        </div>
+        <div class="Player_image">
+            <img src="image/avater.jpg" alt="game avater">
+            <img src="image/avater1.jpg" alt="game avater">
+            <img src="image/avater2.jpg" alt="game avater">
+        </div>
+        <button class="play_button1">Play</button>
+    </div>
+    <!----------------play button part end------------>
+    <!----================player one part start===================------>
+    <p class="error"></p> 
+    <div class="main Playerone">
+        <h2 class="Playername">Player -1</h2>
+        <input type="number" class="Playeroneinput" placeholder="Enter Your Number">
+        <button class="Playeronebutton">GO</button>
+    </div>
+    <!----------------player one part end------------>
+    <!----================player tow part start===================------>
+    <div class="main Playertwo">
+        <p class="chancenumber"><span class="chancecount"></span>/5</p>
+        <h2 class="Playername">Player - 2</h2>
+        <input type="number" class="Playertwoinput" placeholder="Enter Your Number">
+        <button class="Playertwobutton">GO</button>
+    </div>
+    <!----------------player tow part end------------>
+    <!----================player three part start===================------>
+    <div class="main Playerthree">
+        <p class="chancenumber"><span class="chancecount1"></span>/5</p>
+        <h2 class="Playername">Player - 3</h2>
+        <input type="number" class="Playerthreeinput" placeholder="Enter Your Number">
+        <button class="Playerthreebutton">GO</button>
+    </div>  
+    <!----------------player three part end------------>
+    <!----================winner part start===================------> 
+    <div class="winner">
+        <img src="https://www.icegif.com/wp-content/uploads/2023/04/icegif-396.gif" alt="winner">
+        <h2 class="result">winner</h2>
+    </div>
+    <!---------------=winner part end=---------------------->
+<!---------------=game part end=---------------------->
+<!------==========to do list start===========--------->
+<div class="to_do">
+    <div class="addTaskCard">
+        <h2>Add your Task</h2>
+            <div class="addtaskFiled">
+            <input onkeydown="inputkey(event)" class="addInput" type="text" placeholder="Enter Your value">
+            <button onclick="inputclick()" class="addTaskButton">Add</button>
+            </div>
+    </div>
+    <div class="AddedTaskCard">
+      
+    </div>
+
+</div>   
+<!--------------to do part end------------------------>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
